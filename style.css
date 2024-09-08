@@ -116,6 +116,7 @@ nav {
   padding: 1rem;
   border-radius: .5rem;
   width: 50%;
+  min-width: 160px;
 }
 .remaining_container span {
   font-size: 1.5rem;
