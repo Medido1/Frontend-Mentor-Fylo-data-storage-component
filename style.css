@@ -136,6 +136,7 @@ nav {
 @media (min-width: 768px) {
   body {
     background: url(./images/bg-desktop.png) no-repeat;
+    background-size: contain;
     background-position: bottom;
     background-color: var(--Very_Dark_Blue);
   }
@@ -158,6 +159,7 @@ nav {
     right: -6%;
     width: 20%;
     border-radius: .5rem .5rem 0 .5rem;
+    max-width: 200px;
   }
   .remaining_container::before {
     content: "";
