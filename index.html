@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta 
+    name="description" 
+    content="Fylo data storage component helps you manage your storage usage efficiently. 
+    Monitor your used and remaining storage space with visual indicators and intuitive icons." 
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" 
+    rel="stylesheet"
+  >
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Fylo data storage component</title>
+</head>
+<body>
+  <main class="main">
+    <div class="fylo_container">
+      <img src="./images/logo.svg" alt="fylo logo" class="logo">
+      <nav>
+        <div class="icon_container">
+          <img src="./images/icon-document.svg" alt="docment icon" class="icon">
+        </div>
+        <div class="icon_container">
+          <img src="./images/icon-folder.svg" alt="folder icon" class="icon">
+        </div>
+        <div class="icon_container">
+          <img src="./images/icon-upload.svg" alt="upload icon" class="icon">
+        </div>
+      </nav>
+    </div>
+    <div class="usage_container">
+      <p>You’ve used 815 GB of your storage</p>
+      <div class="bar_container">
+        <div class="usage"></div>
+      </div>
+      <p class="min">0 GB</p>
+      <p class="max">1000 GB</p>
+      <div class="remaining_container">
+        <p><span>185 </span>GB Left</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
