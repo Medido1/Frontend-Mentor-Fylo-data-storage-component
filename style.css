@@ -42,7 +42,7 @@ body {
   background-color: var(--Dark_Blue);
   padding: 2rem;
   width: 90vw;
-  max-width: 400px;
+  max-width: 300px;
   border-radius: .5rem 5rem .5rem .5rem;
   height: 200px;
 }
@@ -70,8 +70,9 @@ nav {
   color: var(--Pale_Blue);
   text-align: center;
   position: relative;
+  width: 90vw;
   max-width: 800px;
-  height: 190px;
+  height: 180px;
 }
 .bar_container {
   position: relative;
@@ -96,7 +97,6 @@ nav {
   width: .75rem;
   background-color: white
 }
-
 .min, .max {
   position: absolute;
   top: 200%;
@@ -133,4 +133,46 @@ nav {
   letter-spacing: normal; 
 }
 
+@media (min-width: 768px) {
+  body {
+    background: url(./images/bg-desktop.png) no-repeat;
+    background-position: bottom;
+    background-color: var(--Very_Dark_Blue);
+  }
+  .main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .usage_container {
+    text-align: left;
+    height: 150px;
+  }
+  .circle {
+    left: 79.5%;
+  }
+  .remaining_container {
+    top: -22%;
+    bottom: unset;
+    left: unset;
+    right: -6%;
+    width: 20%;
+    border-radius: .5rem .5rem 0 .5rem;
+  }
+  .remaining_container::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px;
+    border-color: white white transparent transparent;
+    bottom: -43%;
+    right: -9.5%;
+    transform: translateX(-50%);
+  }
+  .remaining_container span {
+    font-size: 1.75rem;
+  }
+}
 
